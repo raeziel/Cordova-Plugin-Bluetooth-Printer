@@ -268,8 +268,14 @@ public class BluetoothPrinter extends CordovaPlugin {
 	boolean printText(CallbackContext callbackContext, String msg) throws IOException {
 		try {
 
-			mmOutputStream.write(msg.getBytes());
-
+			//mmOutputStream.write(msg.getBytes());
+			
+			// Included these lines to print portuguese accented characters 
+			mmOutputStream.write(0x1C); mmOutputStream.write(0x2E); // Cancels Chinese  character mode (FS .)
+			mmOutputStream.write(0x1B); mmOutputStream.write(0x74); mmOutputStream.write(0x10); // Select character code table (ESC t n) - n = 16(0x10) for WPC1252
+			mmOutputStream.write(msg.getBytes("iso-8859-1"));
+			
+			
 			// tell the user data were sent
 			//Log.d(LOG_TAG, "Data Sent");
 			callbackContext.success("Data Sent");
