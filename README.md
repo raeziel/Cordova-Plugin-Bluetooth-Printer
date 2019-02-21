@@ -122,3 +122,8 @@ BTPrinter.printQRCode(function(data){
     console.log("Error");
     console.log(err)
 }, qrData)
+
+
+```
+
+Edited 'BluetoothPrinter.java' printText function for printing portuguese accented characters.
