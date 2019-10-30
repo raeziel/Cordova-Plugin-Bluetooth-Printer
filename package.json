@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hailong/Cordova-Plugin-Bluetooth-Printer.git"
+    "url": "git+https://github.com/raeziel/Cordova-Plugin-Bluetooth-Printer.git"
   },
   "keywords": [
     "cordova",
@@ -32,7 +32,7 @@
   "author": "Syed Rehanuddin",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/Hailong/Cordova-Plugin-Bluetooth-Printer/issues"
+    "url": "https://github.com/raeziel/Cordova-Plugin-Bluetooth-Printer/issues"
   },
-  "homepage": "https://github.com/Hailong/Cordova-Plugin-Bluetooth-Printer#readme"
+  "homepage": "https://github.com/raeziel/Cordova-Plugin-Bluetooth-Printer#readme"
 }
